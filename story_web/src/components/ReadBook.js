@@ -57,10 +57,10 @@ const ReadBook = () => {
   return (
     <div className="read-book">
       <h1>{book.title}</h1>
-      <HTMLFlipBook width={300} height={500} className="flip-book">
+      <HTMLFlipBook width={400} height={400} className="flip-book">
         {book.images.map((image, index) => (
           <div key={index} className="page">
-            <img src={`http://localhost:5000${image.src}`} alt={`page ${index + 1}`} />
+            <img src={`http://localhost:5000${image.src}`} alt={`page ${index + 1}`} className="page-image" />
             <div className={`page-number ${index % 2 === 0 ? 'left' : 'right'}`}>
               第 {index + 1} 頁
             </div>
