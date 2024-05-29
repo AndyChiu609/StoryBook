@@ -1,0 +1,98 @@
+.read-book {
+  text-align: center;
+}
+
+.flip-book {
+  margin: 0 auto;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  border: 1px solid #ccc;
+  padding: 10px;
+  position: relative;
+}
+
+.page img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.page-number {
+  position: absolute;
+  bottom: 10px;
+  font-size: 12px;
+  color: #555;
+}
+
+.page-number.left {
+  left: 10px;
+}
+
+.page-number.right {
+  right: 10px;
+}
+
+.comments-section {
+  margin-top: 20px;
+  text-align: left;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.comments {
+  margin-bottom: 20px;
+}
+
+.comment {
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0;
+}
+
+.comment-input {
+  display: flex;
+  flex-direction: column;
+}
+
+.comment-input input,
+.comment-input textarea {
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 14px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.comment-input button {
+  align-self: flex-end;
+  padding: 10px 20px;
+  font-size: 14px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+}
+
+.comment-input button:hover {
+  background-color: #0056b3;
+}
+
+.back-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+}
+
+.back-button:hover {
+  background-color: #0056b3;
+}
